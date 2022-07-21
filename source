@@ -1,0 +1,75 @@
+-- Made by itsbl_aze - Blaze#7764
+
+local ScreenGui = Instance.new("ScreenGui")
+local FRAME = Instance.new("Frame")
+local TITLE = Instance.new("TextLabel")
+local TEXTUPPER = Instance.new("TextLabel")
+local EXECUTE = Instance.new("TextButton")
+local TEXTBOTTOM = Instance.new("TextLabel")
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+FRAME.Name = "FRAME"
+FRAME.Parent = ScreenGui
+FRAME.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+FRAME.BorderColor3 = Color3.fromRGB(40, 40, 40)
+FRAME.BorderSizePixel = 3
+FRAME.Position = UDim2.new(0.414306998, 0, 0.391676933, 0)
+FRAME.Size = UDim2.new(0, 230, 0, 175)
+FRAME.Active=true
+FRAME.Draggable=true
+
+TITLE.Name = "TITLE"
+TITLE.Parent = FRAME
+TITLE.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+TITLE.BorderColor3 = Color3.fromRGB(40, 40, 40)
+TITLE.BorderSizePixel = 3
+TITLE.Size = UDim2.new(0, 230, 0, 35)
+TITLE.Font = Enum.Font.GothamBold
+TITLE.Text = "WimbleWorld"
+TITLE.TextColor3 = Color3.fromRGB(170, 0, 0)
+TITLE.TextSize = 27.000
+TITLE.TextWrapped = true
+
+TEXTUPPER.Name = "TEXTUPPER"
+TEXTUPPER.Parent = FRAME
+TEXTUPPER.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+TEXTUPPER.BorderColor3 = Color3.fromRGB(63, 63, 63)
+TEXTUPPER.BorderSizePixel = 0
+TEXTUPPER.Position = UDim2.new(0, 0, 0.245714292, 0)
+TEXTUPPER.Size = UDim2.new(0, 230, 0, 35)
+TEXTUPPER.Font = Enum.Font.GothamBold
+TEXTUPPER.Text = "Win Game + Boost XP"
+TEXTUPPER.TextColor3 = Color3.fromRGB(170, 0, 0)
+TEXTUPPER.TextSize = 17.000
+TEXTUPPER.TextWrapped = true
+
+EXECUTE.Name = "EXECUTE"
+EXECUTE.Parent = FRAME
+EXECUTE.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+EXECUTE.BorderColor3 = Color3.fromRGB(26, 26, 26)
+EXECUTE.BorderSizePixel = 4
+EXECUTE.Position = UDim2.new(0.0652173907, 0, 0.479999989, 0)
+EXECUTE.Size = UDim2.new(0, 200, 0, 50)
+EXECUTE.Font = Enum.Font.GothamMedium
+EXECUTE.Text = "EXECUTE"
+EXECUTE.TextColor3 = Color3.fromRGB(170, 0, 0)
+EXECUTE.TextSize = 27.000
+EXECUTE.TextWrapped = true
+EXECUTE.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/BL4Z3PL4Y5/wimbleworldscript1/main/source"))()
+end)
+
+TEXTBOTTOM.Name = "TEXTBOTTOM"
+TEXTBOTTOM.Parent = FRAME
+TEXTBOTTOM.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+TEXTBOTTOM.BorderColor3 = Color3.fromRGB(63, 63, 63)
+TEXTBOTTOM.BorderSizePixel = 0
+TEXTBOTTOM.Position = UDim2.new(0, 0, 0.800000012, 0)
+TEXTBOTTOM.Size = UDim2.new(0, 230, 0, 35)
+TEXTBOTTOM.Font = Enum.Font.GothamBold
+TEXTBOTTOM.Text = "(ONLY USE WHEN GAME IS IN PROGRESS)"
+TEXTBOTTOM.TextColor3 = Color3.fromRGB(170, 0, 0)
+TEXTBOTTOM.TextSize = 10.000
+TEXTBOTTOM.TextWrapped = true
