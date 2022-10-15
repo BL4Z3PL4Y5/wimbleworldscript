@@ -1,4 +1,4 @@
--- Made by itsbl_aze - Blaze#7764
+-- Made by Blaze#7764
 
 local ScreenGui = Instance.new("ScreenGui")
 local FRAME = Instance.new("Frame")
